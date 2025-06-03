@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a237e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>AutoElite - Premium Automobile E-commerce</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">AutoElite</div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="checkout.html" class="checkout-link">Checkout</a>
+                <div class="cart-icon">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70')"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Dream Car</h1>
+            <p>Experience luxury and performance with our premium automobile collection</p>
+            <a href="#categories" class="cta-button">Explore Categories</a>
+            <div class="visitor-counter">
+                <p>Visitors: <span id="visitor-count">0</span></p>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev-slide" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slide-indicators"></div>
+            <button class="next-slide" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search for cars, parts, or accessories...">
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2>Our Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98" alt="Luxury Cars" class="category-image">
+                <div class="category-content">
+                    <h3>Luxury Cars</h3>
+                    <p>Experience ultimate comfort and style</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1611016186353-9af58c69a533" alt="Sports Cars" class="category-image">
+                <div class="category-content">
+                    <h3>Sports Cars</h3>
+                    <p>Feel the thrill of performance</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89" alt="Electric Cars" class="category-image">
+                <div class="category-content">
+                    <h3>Electric Cars</h3>
+                    <p>Embrace the future of driving</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/suv.jpg" alt="SUVs" class="category-image">
+                <div class="category-content">
+                    <h3>SUVs</h3>
+                    <p>Perfect for family adventures</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/parts.jpg" alt="Auto Parts" class="category-image">
+                <div class="cart">
+                    <h3>Cart</h3>
+                    <ul id="cartItems"></ul>
+                    <p><strong>Total: GH₵ <span id="total">0.00</span></strong></p>
+                    <div class="cart-actions">
+                        <a href="cart.html" class="view-cart">View Cart</a>
+                        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="visitor-counter">
+            <i class="fas fa-users"></i>
+            <span id="visitorCount">0</span> visitors
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 AutoElite. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
